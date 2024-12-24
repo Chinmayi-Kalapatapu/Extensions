@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "CatCounter",
+    "version": "1.0",
+    "description": "Counts your devotion to cats.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["Content.js"]
+      }
+    ]
+}
