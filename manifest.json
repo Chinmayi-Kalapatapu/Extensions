@@ -1,0 +1,15 @@
+{
+  "name": "ScaryPages",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "ScaryPages is a Chrome extension that will make your webpages look scary! By replacing existing text with creepy text and existing images with scary images. The perfect prank!",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
