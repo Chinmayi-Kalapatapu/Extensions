@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "404Errors",
+    "version": "1.0",
+    "description": "Prevents users from being able to use the browser effectively by connecting every website's anchor tags to the websites's own 404 page.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>", "https://www.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
